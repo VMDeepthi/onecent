@@ -1,0 +1,71 @@
+.property-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-left: -1%;
+    padding-bottom: 10%;
+}
+
+.hr-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hr-line {
+    flex: 1;
+    height: 1px;
+    background-color: #000000; /* Adjust line color */
+}
+
+.hr-text h2 {
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff; /* Adjust text color */
+    width: 150%;
+}
+
+.property-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust max width as needed */
+}
+
+.property-text {
+    flex: 1;
+    padding-right: 20px; /* Space between text and image */
+}
+
+.property-text p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.property-image img {
+    width: 55%; /* Ensure image fills its container */
+    max-width: 600px; /* Limit image width if necessary */
+    border-radius: 20px; /* Rounded corners for image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    transform: rotate(2deg);
+    position: relative; /* Add this to ensure the overlay can position correctly */
+}
+
+.floor-plans {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.fa-arrow-right-icon {
+    color: white; /* Adjust the color of the icon */
+    margin-left: 200px; /* Adjust spacing as needed */
+    margin-top: 5%; /* Align with the text */
+    font-size: 40px; /* Adjust size as needed */
+}

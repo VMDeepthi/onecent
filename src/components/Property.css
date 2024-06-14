@@ -1,0 +1,146 @@
+.property-details {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  
+  .text-section {
+    flex: 1;
+    max-width: 60%;
+    padding-right: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header span {
+    margin-right: 10px;
+    white-space: nowrap; /* Ensures the text doesn't wrap */
+  }
+  
+  .line {
+    width: 30px;
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    margin-left: -1px;
+    margin-top: 8px; /* Adjust color as needed */
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #011101; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Pointer/hand icon */
+    font-size: 13px; /* Increase font size */
+  }
+  
+  button:hover {
+    background-color: #051405; /* Darker green */
+  }
+  
+  .image-scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    margin-top: 20px;
+  }
+  
+  .image-wrapper {
+    flex: 1;
+    scroll-snap-align: center;
+  }
+  
+  .images-section {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .image {
+    width: 300px; /* Adjust width as needed */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 20px;
+  }
+  
+  .floor-plan-header {
+    text-align: justify;
+    font-size: 40px;
+    font-weight: 50;
+  }
+  
+  .main-images {
+    margin-top: 3.1%;
+  }
+  
+  .main-image {
+    width: 60%;
+    height: auto;
+    margin-top: 25%;
+    margin-right: 5%;
+  }
+  
+  .image-comparison-container {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin-top: 21%;
+    overflow: hidden;
+  }
+  
+  .day-image, .night-image {
+    width: 100%;
+    height: 500px;
+    display: block;
+    max-width: 80%;
+    border-radius: 20px;
+  }
+  
+  .day-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    background-color: #fff;
+    cursor: ew-resize;
+    z-index: 10;
+  }
+  
+  .arrow {
+    font-size: 24px;
+    color: #000;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    left: -25px;
+    color: white;
+    margin-top: 4900%;
+    font-weight: bold;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    right: -25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 4900%;
+  }

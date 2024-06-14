@@ -1,0 +1,309 @@
+/* Define keyframes for letter revealing animation */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to specific elements */
+.animate-reveal {
+  animation: reveal 0.5s ease-out forwards; /* Adjust timing as needed */
+}
+
+/* Styles for Home component */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 5%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.text-container {
+  margin-top: 20px;
+  height: 140%;
+  color: white;
+  width: 90%;
+  background-size: cover;
+  background-position: center;
+  font-family: roboto;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.text-container h1 {
+  margin: 5px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  transition: transform 0.3s ease;
+}
+
+.text-container button:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 20%;
+  }
+
+  .text-container h1 {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .text-container button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: #f5f5f5;
+  max-width: 1250px;
+  margin-top: 5%;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.projects-header p {
+  margin: 0;
+  font-size: 16px;
+  font-family: Roboto;
+  margin-left: 2%;
+  font-style: normal;
+}
+
+.projects-header hr {
+  flex: 1;
+  margin-left: 10px;
+  border: none;
+  border-top: 1px solid #000;
+  max-width: 100px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(33.333% - 20px);
+  margin: 10px;
+}
+
+.img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.project-info {
+  margin-top: 20px;
+}
+
+.project-info p {
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.project-info .heading {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.project-info button {
+  padding-top: 4.5%;
+  padding-bottom: 4.5%;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.project-info button:hover {
+  background-color: rgb(26, 25, 25);
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.about-header p {
+  margin: 0;
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+.about-header hr {
+  flex: 1;
+  margin-left: 10px;
+  border: none;
+  border-top: 1px solid #000;
+  max-width: 100px;
+}
+
+.about-us-img {
+  border-radius: 20px;
+}
+
+.property-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex; /* Ensure flex layout */
+  align-items: center; /* Center items vertically */
+  margin-top: 15%; /* Example margin-top */
+}
+
+.property-header {
+  display: flex; /* Flex layout for header */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px;
+}
+
+.property-header p {
+  margin: 0;
+  font-size: 14px; /* Adjusted font-size */
+
+  font-family: roboto;
+}
+
+.property-line {
+  flex: 1; /* Take remaining space */
+  margin-left: 10px;
+  border: none;
+  border-top: 1px solid #000; /* Solid black line */
+}
+
+.property-content {
+  width: 50%; /* Adjust content width */
+}
+
+.property-text {
+  margin-bottom: 20px;
+}
+
+.property-text h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.property-text p {
+  font-size: 16px; /* Adjusted font-size */
+  line-height: 1.6;
+  color: #666;
+}
+
+.property-image {
+  width: 50%;
+  text-align: center;
+}
+
+.divider {
+  border-top: 2px solid black;
+  margin: 20px 0;
+}
+
+/* Styles for container section */
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 10%;
+}
+
+.left-section,
+.right-section {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-section {
+  background-color: #ffffff; /* White background for the right section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-field {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none; /* Remove all borders */
+  border-bottom: 1px solid #ccc; /* Add only the bottom border */
+  border-radius: 0; /* Remove border radius to match the new border style */
+}
+
+.submit-button {
+  width: 80%;
+  padding: 10px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #faf8f8;
+}
+
+.left-section p {
+  font-family: roboto;
+  text-align: justify;
+}

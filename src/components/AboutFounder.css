@@ -1,0 +1,45 @@
+.about-founder-container {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 192%;
+    margin-left: -50%;
+    margin-top: 10%;
+}
+
+.hr-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hr-line {
+    flex: 1;
+    height: 1px;
+    background-color: #000000; /* Adjust line color */
+   margin-left: 5%;
+   margin-right: 5%;
+}
+
+.hr-text h2 {
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000; /* Adjust text color */
+}
+
+.founder-info {
+    max-width: 600px;
+    margin: 0 auto; /* Center align */
+    text-align: left; /* Align content to left */
+}
+
+.founder-info p {
+    font-size: 16px;
+    line-height:2;
+    width: 100%;
+
+}

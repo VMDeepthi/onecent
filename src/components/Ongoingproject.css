@@ -1,0 +1,34 @@
+/* ProjectSection.css */
+
+.project-section {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    width: 100%;
+  }
+  
+  .image-container {
+    flex: 1; /* Take up 1/2 of the available space */
+  }
+  
+  .image-container img {
+    max-width: 80%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .content {
+    flex: 1; /* Take up 1/2 of the available space */
+    padding-left: 20px; /* Add padding for spacing between image and content */
+  }
+  
+  @media (max-width: 768px) {
+    .project-section {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+  
+    .image-container,
+    .content {
+      max-width: 100%; /* Full width on smaller screens */
+      padding-left: 0; /* Reset padding */
+    }
+  }
+  

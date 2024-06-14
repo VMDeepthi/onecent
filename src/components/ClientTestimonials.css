@@ -1,0 +1,59 @@
+.testimonials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+margin-left: -30%;
+  width: 140%;
+  margin-top: 5%;
+}
+
+
+.what-our-clients-say {
+  flex: 1;
+  padding: 20px;
+}
+
+.client-testimonials {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.testimonial-box {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  height: 200px; /* Adjust height as needed */
+  margin: 0 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 150px;
+  box-shadow: 5px 5px 5px 5px rgb(109, 106, 106);
+  background-color:whitesmoke;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s, left 1s;
+}
+
+.slide.active {
+  left: 0;
+  opacity: 1;
+}
+
+h2, h3 {
+  margin-top: 0;
+  color: #333;
+
+}
+
+p {
+  color: #666;
+}

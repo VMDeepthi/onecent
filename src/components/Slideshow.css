@@ -1,0 +1,24 @@
+.slideshow-container {
+    position: absolute;
+    bottom: -140px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 600px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    overflow: hidden;
+  
+
+  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* Ensure it overlays the existing image */
+}
+
+.slideshow-image {
+    width: 100%;
+    border-radius: 50px;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(20deg);
+    border-radius: 40px;
+    margin-left: 40%;
+   
+}
