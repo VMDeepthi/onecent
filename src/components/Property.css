@@ -144,3 +144,19 @@
     font-weight: bold;
     margin-top: 4900%;
   }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .image-slide-in {
+    animation: slideInFromRight 1s ease-out;
+  }
+  

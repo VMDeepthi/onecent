@@ -7,10 +7,14 @@ import Ongoingproject from './Ongoingproject';
 import TestimonialSection from './ClientTestimonials';
 import Gallery from './Gallery';
 import Property from './Property';
+import useIntersectionObserver from './useIntersectionObserver';
 
 function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [animateText, setAnimateText] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  useIntersectionObserver(setIsVisible);
+
   const images = [
     `${process.env.PUBLIC_URL}/image2.avif`,
     `${process.env.PUBLIC_URL}/image3.jpg`
@@ -40,7 +44,7 @@ function Home() {
       <h1 style={{ fontSize: "50px", marginTop: '10%' }} className={animateText ? 'animate-reveal' : ''}>Welcome to</h1>
 <h1 style={{ fontSize: "90px", fontWeight: "400", marginTop: '-1%' }} className={animateText ? 'animate-reveal' : ''}>Onecent Homes</h1>
 <h1 style={{ fontSize: "20px" }} className={animateText ? 'animate-reveal' : ''}>Where luxury meets affordability</h1>
-        <button style={{ marginBottom: "1%", paddingLeft: "2%", paddingRight: "2%", paddingTop: "1.5%", paddingBottom: "1.5%" }}>DOWNLOAD BROCHURE</button>
+        <button style={{ marginBottom: "1%", paddingLeft: "2%", paddingRight: "2%", paddingTop: "1.5%", paddingBottom: "1.5%" }} className='DOWNLOAD'>DOWNLOAD BROCHURE</button>
       </div>
       <div className="projects-container">
         <div className="projects-header" style={{marginTop:"10%"}}>
@@ -93,10 +97,10 @@ function Home() {
         affordable cost without compromising quality.
       </p>
       <p>Start your journey at Onecent, where affordability meets quality, and comfort meets style.</p>
-      <button style={{backgroundColor:"black",color:"white",paddingTop:"3.5%",paddingBottom:"3.5%",width:"40%",marginTop:"3%",fontWeight:"400"}}>REQUEST QUERY</button>
+      <button style={{backgroundColor:"black",color:"white",paddingTop:"3.5%",paddingBottom:"3.5%",width:"40%",marginTop:"3%",fontWeight:"400"}} >REQUEST QUERY</button>
     </div>
   </div>
-  <img className='about-us-img' src={`${process.env.PUBLIC_URL}/aboutus.webp`} alt="About Us Image" style={{ width: '58%', height: '55%',marginTop:"10%",marginRight:"5%",marginLeft:"-5%" }} />
+  <img className='about-us-img' src={`${process.env.PUBLIC_URL}/aboutus.webp`} alt="About Us Image" style={{ width: '58%', height: '58%',marginTop:"10%",marginRight:"5%",marginLeft:"-5%" }} />
     </div>
     <div>
       <PropertySection />
@@ -129,7 +133,7 @@ function Home() {
                 <input type="text" placeholder="PHONE WITH COUNTRY CODE" className="input-field" />
                 <button type="submit" className="submit-button" style={{paddingTop:"3%",paddingBottom:"3%",marginTop:"2%"}}>SUBMIT REQUEST</button>
             </div> 
-        </div>     
+        </div>   
   <img src={`${process.env.PUBLIC_URL}/logo.svg`} alt="Logo" className="logo" />
   <hr style={{width:"90%"}} /> {/* Add horizontal line here */}
         <Footer />

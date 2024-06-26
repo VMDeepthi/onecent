@@ -48,6 +48,20 @@
     line-height: 1.5;
 }
 
+/* PropertySection.css */
+
+.property-image img {
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
 .property-image img {
     width: 55%; /* Ensure image fills its container */
     max-width: 600px; /* Limit image width if necessary */

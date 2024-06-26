@@ -86,17 +86,19 @@ const PropertyDetails = () => {
         <div className="images-section" style={{ display: 'flex', marginLeft: '10%' }}>
           <div style={{ flex: 1 }}>
             <img
+              key={imageIndex1} // Adding key prop to force re-render
               src={images[imageIndex1]}
               alt={`Image ${imageIndex1 + 1}`}
-              className="image"
+              className="image image-slide-in"
               style={{ marginBottom: '10px' }}
             />
           </div>
           <div style={{ flex: 1, marginLeft: '10px' }}>
             <img
+              key={imageIndex2} // Adding key prop to force re-render
               src={images[imageIndex2]}
               alt={`Image ${imageIndex2 + 1}`}
-              className="image"
+              className="image image-slide-in"
               style={{ marginBottom: '10px' }}
             />
           </div>
@@ -110,7 +112,6 @@ const PropertyDetails = () => {
           <div className="arrow left-arrow">&#9664;</div>
           <div className="arrow right-arrow">&#9654;</div>
         </div>
-   
       </div>
     </div>
   );
